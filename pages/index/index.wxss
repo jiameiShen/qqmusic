@@ -1,0 +1,242 @@
+/**index.wxss**/
+
+view {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.wraper {
+  background: #f4f4f4;
+  width: 100%;
+  height: 100%;
+}
+
+/*头部*/
+
+.header {
+  width: 100%;
+  height: 44px;
+  line-height: 44px;
+  background: #31c27c;
+  overflow: hidden;
+}
+
+.header image {
+  width: 90px;
+  height: 25px;
+  margin: 9px 0 0 10px;
+}
+
+.header button {
+  float: right;
+  height: 28px;
+  line-height: 28px;
+  padding: 0 12px;
+  margin: 8px 10px;
+  font-size: 14px;
+  border-radius: 99px;
+  background: #149c5a;
+  color: #fff;
+}
+
+/* 导航 */
+
+.nav {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  display: flex;
+}
+
+.nav text {
+  flex: 1;
+  display: block;
+  text-align: center;
+  font-size: 16px;
+}
+
+.nav text.active {
+  color: #31c27c;
+  box-shadow: inset 0 -2px 0 #31c27c;
+}
+
+.slide-image {
+  width: 100%;
+  height: 150px;
+}
+
+.refer-block {
+  margin: 10px;
+}
+
+.refer-title {
+  display: block;
+  font-size: 16px;
+  height: 24px;
+  line-height: 24px;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.radio-block {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.radio-block>view {
+  /*flex: 1;*/
+  width: 50%;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  background-color: #f4f4f4;
+}
+
+.radio-block>view:nth-child(odd) {
+  padding-right: 4px;
+}
+
+.radio-block>view:nth-child(even) {
+  padding-left: 4px;
+}
+
+.radio-block image {
+  width: 100%;
+  height: 146px;
+  display: block;
+}
+
+.radio-block .refer-content {
+  height: 36px;
+  padding: 5px 7px 5px;
+  background: #fff;
+}
+
+text.h3 {
+  font-size: 14px;
+  line-height: 18px;
+  margin: 2px;
+}
+
+.radio-block text.author {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 12px;
+}
+
+.loading {
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin: 60px auto 50px;
+}
+
+/* 排行榜 */
+.topic-outer{
+    padding: 10px;
+}
+.topic-item{
+    background: #fff;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+
+.topic-pic{
+    width: 100px;
+    height: 100px;
+    display: block;
+    float: left;
+    margin-right: 15px;
+}
+
+.topic-tit{
+    font-size: 16px;
+    display: block;
+    margin:5px 0 10px;
+}
+text.nowrap{
+    display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+/* 搜索 */
+.search-box{
+    margin: 10px;
+    background: #fff;
+    padding: 8px 12px 8px 35px;
+    border-radius: 3px;
+    position: relative;
+}
+
+.search-box input{
+   color: rgba(0,0,0,.3);
+    font-size: 14px;
+    height: 20px;
+    position: relative; 
+    min-height: auto !important;
+    line-height: 1;   
+    
+}
+
+.clear{
+  position: absolute;
+  top: 9px;
+  right: 12px;
+}
+
+.icon-search {
+    position: absolute;
+    top: 9px;
+    left: 10px;
+    width: 18px;
+    height: 18px;
+    background-image: url(../../img/search.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-indent: -999px;
+}
+
+.search-box .placeholder{
+    color: rgba(0,0,0,.3);
+}
+
+.search-list{
+    background: #fff;
+}
+
+.search-list>view{
+    border-top: 1px solid #f4f4f4;
+    position: relative;
+    height: 55px;
+    padding-left: 56px;
+    overflow: hidden;
+}
+
+.songname{
+    display: block;
+    margin: 10px 0 4px;
+    line-height: 18px;
+    font-size: 16px;
+    font-weight: normal;
+    color: #000;
+}
+.singername{
+    display: block;
+    color: #808080;
+    font-size: 12px;
+}
+
+.icon-music{
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    width: 22px;
+    height: 20px;
+    background-position: 0 0;
+    background-image: url("../../img/search_sprite.png");
+    background-repeat: no-repeat;
+    background-size: 22px 30px;
+}
